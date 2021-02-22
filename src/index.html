@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/c39033e14b.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+
+    <title>Credit card concept</title>
+
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+<body>
+
+    <main class="container">
+
+        <div id="social-buttons">
+            <a href="https://www.linkedin.com/in/luciano-nieves/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/GOZEBRAHEAD" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+
+        <!-- Credit card options when creating -->
+        <div class="main-box">
+            <h1>Create your credit card!</h1>
+
+            <div class="card-items">
+                <div class="name-item">
+                    <label for="card-name">Cardholder name</label>
+                    <input type="text" id="card-name" placeholder="ex. Keanu Reeves" maxlength="26" required/>
+                    <i class="far fa-check-circle"></i>
+                    <i class="far fa-times-circle"></i>
+                </div>
+
+                <div class="number-item">
+                    <label for="card-number">Card number</label>
+                    <input type="text" id="card-number" placeholder="ex. 5500-0804-1900-3244" maxlength="19" required/>
+                    <i class="far fa-check-circle"></i>
+                    <i class="far fa-times-circle"></i>
+                </div>
+
+                <div class="short-items">
+                    <div>
+                        <label for="card-expiry">Expiry</label>
+                        <input type="text" id="card-expiry" placeholder="ex. 02/24" maxlength="5" required/>
+                        <i class="far fa-check-circle"></i>
+                        <i class="far fa-times-circle"></i>
+                    </div>
+
+                    <div>
+                        <label for="card-cvc">CVC</label>
+                        <input type="text" id="card-cvc" placeholder="ex. 777" maxlength="3" required/>
+                        <i class="far fa-check-circle"></i>
+                        <i class="far fa-times-circle"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button id="create-credit-card">Create credit card</button>
+
+        <!-- Credit card when created -->
+        <div id="final-credit-card">
+            <label id="final-card-topleft-text">Credit card concept</label>
+
+            <img id="final-card-chip" src="../img/chip.svg" alt="credit card chip" />
+
+            <label id="final-card-numbers"></label>
+
+            <div class="final-lower-items">
+                <label id="final-card-expiry"></label>
+                <i id="final-card-icon" class="fas fa-dove"></i>
+                <label id="final-card-name"></label>
+            </div>
+        </div>
+
+        <button id="go-back"><i class="fas fa-arrow-left"></i></button>
+    </main>
+    
+    <script src="app.js"></script>
+</body>
+</html>
