@@ -1,4 +1,12 @@
+# Credit card concept
+
 This is a credit card concept I've made using HTML5, CSS3 and vanilla JavaScript.
+
+## Live Demo
+
+https://credit-card-concept.netlify.app/
+
+## Screenshots
 
 ![image](https://user-images.githubusercontent.com/54969894/108759256-e1a9a600-752a-11eb-8e68-7778dc8aaef0.png)
 
